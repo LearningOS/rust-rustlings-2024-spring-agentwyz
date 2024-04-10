@@ -28,8 +28,6 @@ fn calculate_price_of_apples(cnt:i32) -> i32 {
 
 }
 
-
-
 #[test]
 fn verify_test() {
     let price1 = calculate_price_of_apples(35);
