@@ -7,7 +7,9 @@
 
 fn main() {
     let vec0 = Vec::new();
-
+    
+    
+    //传递参数会导致所有权转移 所以对它进行clone
     let vec1 = fill_vec(vec0);
 
     println!("{} has length {} content `{:?}`", "vec1", vec1.len(), vec1);
@@ -24,5 +26,5 @@ fn fill_vec(vec: Vec<i32>) -> Vec<i32> {
     vec.push(44);
     vec.push(66);
 
-    vec
+    vec.clone()
 }
